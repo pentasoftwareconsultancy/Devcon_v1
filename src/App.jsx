@@ -7,14 +7,17 @@ import Services from "./pages/Services";
 import Career from "./pages/Career";
 import UsHealthcare from "./pages/UsHealthcare";
 import NavBar from "./components/NavBar/NavBar";
+import Footer  from "./components/footer/Footer";
+
+// import Card from "./components/NavBar/card/Card";
 
 const App = () => {
   return (
     <div className="w-full h-screen">
       <NavBar />
+    
       <div>
       
-   
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -23,7 +26,11 @@ const App = () => {
           <Route path="/careers" element={<Career />} />
           <Route path="/ushealthcare" element={<UsHealthcare />} />
         </Routes>
+        
       </div>
+      
+      <Footer />
+      
     </div>
   );
 };
