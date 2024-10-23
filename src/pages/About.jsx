@@ -4,9 +4,6 @@ import Image1 from "../../public/assets/images/image1.svg";
 import Image2 from "../../public/assets/images/image2.svg";
 import Image4 from "../../public/assets/images/image4.jpg";
 import aboutus4 from "../../public/assets/images/aboutus4.png";
-import { VscEye } from "react-icons/vsc";
-import { LuGoal } from "react-icons/lu";
-import { RiTeamLine } from "react-icons/ri";
 import Aboutcard from "../components/aboutcard/Aboutcard";
 
 function About() {

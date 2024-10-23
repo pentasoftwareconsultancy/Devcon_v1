@@ -14,10 +14,10 @@ import HSBC from "../../public/assets/images/HSBC.png";
 import Accesshealthacer from "../../public/assets/images/Accesshealthacer.png";
 import MentorGraphics from "../../public/assets/images/Mentor Graphics.png";
 import intrergraph from "../../public/assets/images/intrergraph.png";
-import { VscEye } from "react-icons/vsc";
-import { LuGoal } from "react-icons/lu";
-import { RiTeamLine } from "react-icons/ri";
 import Aboutcard from "../components/aboutcard/Aboutcard";
+import Whoweare from "../assets/whoweare.jpg"
+
+
 
 const Home = () => {
   const settings = {
@@ -99,10 +99,10 @@ const Home = () => {
       <section className="flex flex-col md:flex-row items-center  py-12 mb-10 px-6 md:px-12">
         {/* image left side */}
         <div className="md:w-1/2 mb-8 md:mb-0 -ml-1 p-10">
-          <img
-            src="/src/assets/whoweare.jpg"
-            className="w-full h-auto rounded hover:shadow-orange-400 shadow-md transition-transform  hover:-translate-y-1 hover:scale-110 delay-150 "
-          ></img>
+          
+           <img 
+           src={Whoweare}
+           className="w-full h-auto rounded hover:shadow-orange-400 shadow-md transition-transform  hover:-translate-y-1 hover:scale-110 delay-150 " />
         </div>
 
         {/*right side content */}
@@ -219,7 +219,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
 
       {/* Our Clients section started */}
 
@@ -230,10 +229,12 @@ const Home = () => {
           <span className="text-orange-400">Clients</span>
         </h2>
         <Slider {...settings}>
+
           <div className=" p-10 sm:p-6 lg:p-10">
             <h3 className=" text-slate-600 bg-orange-200 h-28 w-52 flex justify-center rounded-md  ">
               <img src={deloitee} />
             </h3>
+
           </div>
 
           <div className=" p-10 sm:p-6 lg:p-10">
@@ -290,14 +291,10 @@ const Home = () => {
           </div>
         </Slider>
       </div>
-         
 
-
-         {/* fourth section for our vision and mission */}
+      {/* fourth section for our vision and mission */}
 
       <Aboutcard />
-
-
     </>
   );
 };
