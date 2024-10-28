@@ -134,6 +134,7 @@ const NavBar = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           ></i>
              </div>
+             
           {/* Monile menu  */}
 
           <div

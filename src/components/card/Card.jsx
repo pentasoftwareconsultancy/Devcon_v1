@@ -39,6 +39,7 @@ function Card() {
         <div className='w-full h-1/2 px-3 py-4'>
 
            <h1 className='font-bold text-xl mt-1 hover:text-slate-600'>{elem.name}</h1>
+           
            <p className='text-base mt-3 font-normal mb-3 w-fit'>{elem.description}</p>
          
               <hr className="w-full h-1 bg-slate-300 mt-3 rounded px-1 mb-1 hover:bg-slate-500"/>
